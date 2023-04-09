@@ -12,7 +12,7 @@ async def chat(text: str) -> str:
         model="text-davinci-003",
         prompt=text,
         temperature=0.5,
-        max_tokens=500
+        max_tokens=2000
     )
     return response["choices"][0]["text"]
 
